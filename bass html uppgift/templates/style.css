@@ -67,5 +67,6 @@ footer {
 }
 
 body {
-    padding-bottom: 80px; /* Space for fixed footer */
+    padding-bottom: 80px;
+
 }
