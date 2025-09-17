@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Vår Hemsida{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Hem</a></li>
+            <li><a href="/about">Om oss</a></li>
+            <li><a href="/contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>{% block heading %}{% endblock %}</h1>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vår Hemsida. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>
